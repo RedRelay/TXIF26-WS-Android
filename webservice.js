@@ -28,7 +28,8 @@ server.post('/mes_livraisons', function(req, res, next) {
             libelleLivraison: "Supermarché",
             lat: '48.299953',
 			lng: '4.096061',
-            dateDeFin: '06/12/2017',
+			adresse : '25 rue Emile Zola, 75000 Paris',
+            dateDeFin: new Date("2017-03-25T12:00:00Z").getTime(),
             statusActuel: '1'
           },
           {
@@ -36,7 +37,8 @@ server.post('/mes_livraisons', function(req, res, next) {
             libelleLivraison: "marché",
             lat: '48.297053',
 			lng: '4.076061',
-            dateDeFin: '08/12/2017',
+			adresse : '32 apt B rue Leroy, 59800 Lille',
+            dateDeFin: new Date("2017-04-02T18:30:00Z").getTime(),
             statusActuel: '2'
           }
         ]});
