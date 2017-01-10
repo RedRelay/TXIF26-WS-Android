@@ -21,7 +21,7 @@ server.post('/mes_livraisons', function(req, res, next) {
 
   if(!req.params.TOKEN || req.params.TOKEN !== TOKEN) {
     res.send(new errs.UnauthorizedError("Bad token"));
-  }else if(!req.params.FROM_ID || req.params.FROM_ID == 0){
+  }else if(!req.params.FROM_ID || req.params.FROM_ID == -1){
       res.send({ livraisons : [
           {
             idLivraison: '1',
